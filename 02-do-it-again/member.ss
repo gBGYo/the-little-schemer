@@ -5,7 +5,7 @@
   (lambda (e l)
     (cond
       ((null? l) #f)
-      (eq? e (car l))
+      ((eq? e (car l)) #t)
       (else (member? e (cdr l))))))
 
 ; Test cases
